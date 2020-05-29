@@ -8,6 +8,7 @@ import Share from '../components/Share'
 import Disqus from '../components/Disqus'
 import Layout from '../components/Layout'
 
+
 const ArticlePage = ({ data }) => {
   const { markdownRemark: post } = data
   return (
@@ -24,6 +25,7 @@ const ArticlePage = ({ data }) => {
         <div className='container content'>
           <div className='columns'>
             <div className='column is-10 is-offset-1'>
+              
               <ArticleTemplate
                 content={post.html}
                 contentComponent={HTMLContent}
